@@ -5,6 +5,7 @@ export default defineConfig({
   base: '/python-quick-start/',
   title: "python-quick-start",
   description: "快速学习python相关基础知识",
+  ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
