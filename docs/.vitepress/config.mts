@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/python-quick-start/',
   title: "python-quick-start",
   description: "快速学习python相关基础知识",
   themeConfig: {
