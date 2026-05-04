@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import escapeBraces from './plugins/escapeBraces.js'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,6 +7,11 @@ export default defineConfig({
   title: "python-quick-start",
   description: "快速学习python相关基础知识",
   ignoreDeadLinks: true,
+  markdown: {
+    config(md) {
+      md.use(escapeBraces)
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -15,7 +21,8 @@ export default defineConfig({
       { text: '数据结构与算法', link: '/guide/python/python-data-structures-and-algorithms/' },
       { text: 'PySide6 GUI', link: '/guide/python/python-pyside6/' },
       { text: 'FastAPI', link: '/guide/python/python-fastapi/' },
-      { text: '网络爬虫', link: '/guide/python/python-web-scraping/' }
+      { text: '网络爬虫', link: '/guide/python/python-web-scraping/' },
+      { text: '我的博客', link: 'https://dingtongbin.cn' }
     ],
 
     sidebar: {

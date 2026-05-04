@@ -4,37 +4,39 @@ layout: home
 hero:
   name: "Python Quick Start"
   text: "从零开始，系统掌握 Python"
-  tagline: 覆盖基础语法、数据分析、Web 开发、GUI、爬虫、算法 6 大方向，85+ 篇实战教程
+  tagline: 一份快速的 Python 学习指南，涵盖从基础到实战的完整路径
   actions:
     - theme: brand
-      text: 🐍 开始学习
+      text: 开始学习
       link: /guide/python/python-basics/
     - theme: alt
-      text: 📦 GitHub 仓库
+      text: GitHub
       link: https://github.com/dingtongbin/python-quick-start
 
 features:
-  - title: 🐍 Python 基础
-    details: 从环境搭建到面向对象，14 章系统讲解 Python 核心语法。零基础也能看懂。
+  - title: Python 基础
+    details: 14 章内容带你从零入门，从环境配置到面向对象编程，每一步都有详细讲解和代码示例。
     link: /guide/python/python-basics/
-  - title: 📊 数据分析
-    details: 掌握 NumPy、Pandas、Matplotlib、Seaborn，学会数据清洗、统计分析和可视化。
+  - title: 数据分析
+    details: 学习 NumPy、Pandas、Matplotlib 和 Seaborn，掌握数据处理、分析和可视化的核心技能。
     link: /guide/python/python-data-analysis/
-  - title: 🧮 数据结构与算法
-    details: 链表、树、图、排序、搜索、动态规划……面试高频考点一网打尽。
+  - title: 数据结构与算法
+    details: 系统学习链表、树、图、排序、动态规划等经典算法，为面试和实际开发打下坚实基础。
     link: /guide/python/python-data-structures-and-algorithms/
-  - title: 🖥️ PySide6 桌面应用
-    details: 用 Python 开发跨平台 GUI 应用，从按钮到打包发布，完整实战。
+  - title: PySide6 桌面应用
+    details: 用 Python 开发跨平台的桌面 GUI 应用，从界面设计到打包发布，手把手教你完成完整项目。
     link: /guide/python/python-pyside6/
-  - title: ⚡ FastAPI 现代 Web
-    details: FastAPI + SQLAlchemy 2.0 + Redis，构建高性能异步 API 服务。
+  - title: FastAPI 现代 Web 开发
+    details: 基于 FastAPI + SQLAlchemy 2.0 + Redis，构建高性能的异步 Web API 服务。
     link: /guide/python/python-fastapi/
-  - title: 🕷️ 网络爬虫
-    details: Requests、BeautifulSoup、Scrapy、Selenium，静态与动态页面通吃。
+  - title: 网络爬虫
+    details: 从静态页面到动态渲染，从 Requests 到 Scrapy 框架，学会合规高效地采集网络数据。
     link: /guide/python/python-web-scraping/
 ---
 
-## 🛠️ 本地运行
+## 💻 本地运行
+
+如果你想在本机预览文档，可以按照以下步骤操作：
 
 ```bash
 git clone https://github.com/dingtongbin/python-quick-start.git
@@ -43,10 +45,11 @@ npm install
 npm run docs:dev
 ```
 
-浏览器打开 `http://localhost:5173/python-quick-start/` 即可预览。
+启动后在浏览器中访问 `http://localhost:5173/python-quick-start/` 就能看到文档了。
 
-## 📌 项目地址
+## 🔗 相关链接
 
-🔗 [GitHub Repository](https://github.com/dingtongbin/python-quick-start)
+- **GitHub 仓库**：[https://github.com/dingtongbin/python-quick-start](https://github.com/dingtongbin/python-quick-start)
+- **我的博客**：[https://dingtongbin.cn](https://dingtongbin.cn)
 
-欢迎 Star ⭐、Issue 💬 和 PR 🎉！
+如果这些内容对你有帮助，欢迎给个 Star ⭐，也期待你的反馈和建议！
