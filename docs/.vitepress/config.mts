@@ -16,18 +16,18 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Python基础', link: '/guide/python/python-basics/' },
-      { text: '数据分析', link: '/guide/python/python-data-analysis/' },
-      { text: '数据结构与算法', link: '/guide/python/python-data-structures-and-algorithms/' },
-      { text: 'FastAPI', link: '/guide/python/python-fastapi/' },
-      { text: '网络爬虫', link: '/guide/python/python-web-scraping/' },
+      { text: 'Python基础', link: '/guide/python/python-basics/第1章 开发环境搭建' },
+      { text: '数据结构与算法', link: '/guide/python/python-data-structures-and-algorithms/第1章 算法基础与复杂度分析' },
+      { text: '网络爬虫', link: '/guide/python/python-web-scraping/第1章 爬虫基础与法律伦理' },
+      { text: '数据分析', link: '/guide/python/python-data-analysis/第1章 数据分析入门与环境搭建' },
+      { text: 'FastAPI', link: '/guide/python/python-fastapi/第1章 起航：FastAPI 初体验' },
       { text: '我的博客', link: 'https://dingtongbin.cn' }
     ],
 
     sidebar: {
       '/guide/python/python-basics/': [
         {
-          text: '🐍 Python入门',
+          text: 'Python入门',
           items: [
             { text: '目录概览', link: '/guide/python/python-basics/' },
             { text: '第1章 开发环境搭建', link: '/guide/python/python-basics/第1章 开发环境搭建' },
@@ -49,7 +49,7 @@ export default defineConfig({
       ],
       '/guide/python/python-data-analysis/': [
         {
-          text: '📊 Python数据分析',
+          text: 'Python数据分析',
           items: [
             { text: '目录概览', link: '/guide/python/python-data-analysis/' },
             { text: '第1章 数据分析入门与环境搭建', link: '/guide/python/python-data-analysis/第1章 数据分析入门与环境搭建' },
@@ -69,7 +69,7 @@ export default defineConfig({
       ],
       '/guide/python/python-data-structures-and-algorithms/': [
         {
-          text: '🌳 数据结构与算法',
+          text: '数据结构与算法',
           items: [
             { text: '目录概览', link: '/guide/python/python-data-structures-and-algorithms/' },
             { text: '第1章 算法基础与复杂度分析', link: '/guide/python/python-data-structures-and-algorithms/第1章 算法基础与复杂度分析' },
@@ -91,7 +91,7 @@ export default defineConfig({
       ],
       '/guide/python/python-fastapi/': [
         {
-          text: '⚡ FastAPI 现代 Web 开发',
+          text: 'FastAPI 现代 Web 开发',
           items: [
             { text: '目录概览', link: '/guide/python/python-fastapi/' },
             { text: '第1章 起航：FastAPI 初体验', link: '/guide/python/python-fastapi/第1章 起航：FastAPI 初体验' },
@@ -112,7 +112,7 @@ export default defineConfig({
       ],
       '/guide/python/python-web-scraping/': [
         {
-          text: '🕷️ Python 网络爬虫',
+          text: 'Python 网络爬虫',
           items: [
             { text: '目录概览', link: '/guide/python/python-web-scraping/' },
             { text: '第1章 爬虫基础与法律伦理', link: '/guide/python/python-web-scraping/第1章 爬虫基础与法律伦理' },

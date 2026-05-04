@@ -21,11 +21,11 @@
 
 | 模块 | 章节数 | 适合人群 |
 |------|--------|----------|
-| [Python 基础](https://dingtongbin.github.io/python-quick-start/guide/python/python-basics/) | 14 章 | 零基础入门 |
-| [数据分析](https://dingtongbin.github.io/python-quick-start/guide/python/python-data-analysis/) | 12 章 | 想学 NumPy / Pandas 的开发者 |
-| [数据结构与算法](https://dingtongbin.github.io/python-quick-start/guide/python/python-data-structures-and-algorithms/) | 14 章 | 准备面试 / 提升编程思维 |
-| [FastAPI](https://dingtongbin.github.io/python-quick-start/guide/python/python-fastapi/) | 13 章 | 现代 Web API 开发 |
-| [网络爬虫](https://dingtongbin.github.io/python-quick-start/guide/python/python-web-scraping/) | 12 章 | 数据采集与自动化 |
+| [Python 基础](https://dingtongbin.github.io/python-quick-start/guide/python/python-basics/第1章 开发环境搭建) | 14 章 | 零基础入门 |
+| [数据结构与算法](https://dingtongbin.github.io/python-quick-start/guide/python/python-data-structures-and-algorithms/第1章 算法基础与复杂度分析) | 14 章 | 准备面试 / 提升编程思维 |
+| [网络爬虫](https://dingtongbin.github.io/python-quick-start/guide/python/python-web-scraping/第1章 爬虫基础与法律伦理) | 12 章 | 数据采集与自动化 |
+| [数据分析](https://dingtongbin.github.io/python-quick-start/guide/python/python-data-analysis/第1章 数据分析入门与环境搭建) | 12 章 | 想学 NumPy / Pandas 的开发者 |
+| [FastAPI](https://dingtongbin.github.io/python-quick-start/guide/python/python-fastapi/第1章 起航：FastAPI 初体验) | 13 章 | 现代 Web API 开发 |
 
 ---
 
@@ -67,7 +67,7 @@ npm run docs:preview
 
 ## 许可证
 
-本项目基于 MIT License 开源。
+本项目基于 Apache License 2.0 开源。
 
 ---
 
