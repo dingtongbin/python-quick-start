@@ -23,9 +23,6 @@ features:
   - title: 数据结构与算法
     details: 系统学习链表、树、图、排序、动态规划等经典算法，为面试和实际开发打下坚实基础。
     link: /guide/python/python-data-structures-and-algorithms/
-  - title: PySide6 桌面应用
-    details: 用 Python 开发跨平台的桌面 GUI 应用，从界面设计到打包发布，手把手教你完成完整项目。
-    link: /guide/python/python-pyside6/
   - title: FastAPI 现代 Web 开发
     details: 基于 FastAPI + SQLAlchemy 2.0 + Redis，构建高性能的异步 Web API 服务。
     link: /guide/python/python-fastapi/
@@ -34,7 +31,7 @@ features:
     link: /guide/python/python-web-scraping/
 ---
 
-## 💻 本地运行
+## 本地运行
 
 如果你想在本机预览文档，可以按照以下步骤操作：
 
@@ -47,7 +44,7 @@ npm run docs:dev
 
 启动后在浏览器中访问 `http://localhost:5173/python-quick-start/` 就能看到文档了。
 
-## 🔗 相关链接
+## 相关链接
 
 - **GitHub 仓库**：[https://github.com/dingtongbin/python-quick-start](https://github.com/dingtongbin/python-quick-start)
 - **我的博客**：[https://dingtongbin.cn](https://dingtongbin.cn)

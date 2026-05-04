@@ -24,7 +24,6 @@
 | [Python 基础](https://dingtongbin.github.io/python-quick-start/guide/python/python-basics/) | 14 章 | 零基础入门 |
 | [数据分析](https://dingtongbin.github.io/python-quick-start/guide/python/python-data-analysis/) | 12 章 | 想学 NumPy / Pandas 的开发者 |
 | [数据结构与算法](https://dingtongbin.github.io/python-quick-start/guide/python/python-data-structures-and-algorithms/) | 14 章 | 准备面试 / 提升编程思维 |
-| [PySide6 GUI](https://dingtongbin.github.io/python-quick-start/guide/python/python-pyside6/) | 13 章 | 想做桌面应用的开发者 |
 | [FastAPI](https://dingtongbin.github.io/python-quick-start/guide/python/python-fastapi/) | 13 章 | 现代 Web API 开发 |
 | [网络爬虫](https://dingtongbin.github.io/python-quick-start/guide/python/python-web-scraping/) | 12 章 | 数据采集与自动化 |
 

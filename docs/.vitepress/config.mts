@@ -19,7 +19,6 @@ export default defineConfig({
       { text: 'Python基础', link: '/guide/python/python-basics/' },
       { text: '数据分析', link: '/guide/python/python-data-analysis/' },
       { text: '数据结构与算法', link: '/guide/python/python-data-structures-and-algorithms/' },
-      { text: 'PySide6 GUI', link: '/guide/python/python-pyside6/' },
       { text: 'FastAPI', link: '/guide/python/python-fastapi/' },
       { text: '网络爬虫', link: '/guide/python/python-web-scraping/' },
       { text: '我的博客', link: 'https://dingtongbin.cn' }
@@ -90,27 +89,6 @@ export default defineConfig({
           ]
         }
       ],
-      '/guide/python/python-pyside6/': [
-        {
-          text: '🖥️ PySide6 GUI开发',
-          items: [
-            { text: '目录概览', link: '/guide/python/python-pyside6/' },
-            { text: '第1章 起步：PySide6 快速上手', link: '/guide/python/python-pyside6/第1章 起步：PySide6 快速上手' },
-            { text: '第2章 核心概念：信号、槽与事件循环', link: '/guide/python/python-pyside6/第2章 核心概念：信号、槽与事件循环' },
-            { text: '第3章 基础控件与布局管理', link: '/guide/python/python-pyside6/第3章 基础控件与布局管理' },
-            { text: '第4章 主窗口与菜单系统', link: '/guide/python/python-pyside6/第4章 主窗口与菜单系统' },
-            { text: '第5章 对话框与用户输入', link: '/guide/python/python-pyside6/第5章 对话框与用户输入' },
-            { text: '第6章 使用 Qt Designer 开发 UI', link: '/guide/python/python-pyside6/第6章 使用 Qt Designer 开发 UI' },
-            { text: '第7章 高级控件：列表、表格与树', link: '/guide/python/python-pyside6/第7章 高级控件：列表、表格与树' },
-            { text: '第8章 多线程与后台任务', link: '/guide/python/python-pyside6/第8章 多线程与后台任务' },
-            { text: '第9章 样式美化与主题支持', link: '/guide/python/python-pyside6/第9章 样式美化与主题支持' },
-            { text: '第10章 文件、配置与持久化', link: '/guide/python/python-pyside6/第10章 文件、配置与持久化' },
-            { text: '第11章 国际化与多语言支持', link: '/guide/python/python-pyside6/第11章 国际化与多语言支持' },
-            { text: '第12章 打包与分发', link: '/guide/python/python-pyside6/第12章 打包与分发' },
-            { text: '第13章 综合项目实战：个人笔记管理器', link: '/guide/python/python-pyside6/第13章 综合项目实战：个人笔记管理器' }
-          ]
-        }
-      ],
       '/guide/python/python-fastapi/': [
         {
           text: '⚡ FastAPI 现代 Web 开发',
@@ -159,7 +137,6 @@ export default defineConfig({
             { text: 'Python基础', link: '/guide/python/python-basics/' },
             { text: '数据分析', link: '/guide/python/python-data-analysis/' },
             { text: '数据结构与算法', link: '/guide/python/python-data-structures-and-algorithms/' },
-            { text: 'PySide6 GUI', link: '/guide/python/python-pyside6/' },
             { text: 'FastAPI', link: '/guide/python/python-fastapi/' },
             { text: '网络爬虫', link: '/guide/python/python-web-scraping/' }
           ]
