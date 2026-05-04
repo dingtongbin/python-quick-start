@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 开始学习
-      link: /guide/python/python-basics/
+      link: /guide/python/python-basics/第1章 开发环境搭建
     - theme: alt
       text: GitHub
       link: https://github.com/dingtongbin/python-quick-start
