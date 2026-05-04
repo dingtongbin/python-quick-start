@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Python Quick Start"
   text: "从零开始，系统掌握 Python"
-  tagline: 一份快速的 Python 学习指南，涵盖从基础到实战的完整路径
+  tagline: 一份快速的 Python 学习文档
   actions:
     - theme: brand
       text: 开始学习
@@ -17,18 +17,20 @@ features:
   - title: Python 基础
     details: 14 章内容带你从零入门，从环境配置到面向对象编程，每一步都有详细讲解和代码示例。
     link: /guide/python/python-basics/
+  - title: 数据结构与算法
+    details: 系统学习链表、树、图、排序、动态规划等经典算法，为面试和实际开发打下坚实基础。
+    link: /guide/python/python-data-structures-and-algorithms/    
+  - title: 网络爬虫
+    details: 从静态页面到动态渲染，从 Requests 到 Scrapy 框架，学会合规高效地采集网络数据。
+    link: /guide/python/python-web-scraping/    
   - title: 数据分析
     details: 学习 NumPy、Pandas、Matplotlib 和 Seaborn，掌握数据处理、分析和可视化的核心技能。
     link: /guide/python/python-data-analysis/
-  - title: 数据结构与算法
-    details: 系统学习链表、树、图、排序、动态规划等经典算法，为面试和实际开发打下坚实基础。
-    link: /guide/python/python-data-structures-and-algorithms/
   - title: FastAPI 现代 Web 开发
     details: 基于 FastAPI + SQLAlchemy 2.0 + Redis，构建高性能的异步 Web API 服务。
     link: /guide/python/python-fastapi/
-  - title: 网络爬虫
-    details: 从静态页面到动态渲染，从 Requests 到 Scrapy 框架，学会合规高效地采集网络数据。
-    link: /guide/python/python-web-scraping/
+    
+
 ---
 
 ## 本地运行
