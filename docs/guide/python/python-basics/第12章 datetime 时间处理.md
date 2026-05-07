@@ -201,22 +201,28 @@ except ValueError as e:
 
 ### 12.5 时区处理初步
 
-在实际应用中，我们经常需要处理不同时区的时间。Python 3.8 中可以使用 `timezone` 类来处理时区信息。
+实际开发中经常需要处理不同时区的时间。Python 3.8 可利用 `datetime.timezone` 和 `timedelta` 完成基本操作。
 
 ```python
 from datetime import datetime, timezone, timedelta
 
-# 创建带时区的时间
-tz_beijing = timezone(timedelta(hours=8))
-t = datetime(2025, 1, 1, 12, 0, 0, tzinfo=tz_beijing)
-print(t)  # 2025-01-01 12:00:00+08:00
+# 1. 创建带时区的时间对象
+tz_shanghai = timezone(timedelta(hours=8))
+t1 = datetime(2025, 6, 1, 12, 0, 0, tzinfo=tz_shanghai)
+print(t1)  # 2025-06-01 12:00:00+08:00
 
-# 转换为其它时区
+# 2. 获取当前 UTC 时间（推荐写法）
+now_utc = datetime.now(timezone.utc)
+print("当前 UTC 时间：", now_utc)
+
+# 3. 当前本地时间（不含时区信息）
+now_local = datetime.now()
+print("当前本地时间：", now_local)
+
+# 4. 将带时区的时间转换为另一个时区
 tz_newyork = timezone(timedelta(hours=-5))
-t_newyork = t.astimezone(tz_newyork)
-print(t_newyork)  # 2025-01-01 04:00:00-05:00
+t_ny = t1.astimezone(tz_newyork)
+print(t_ny)  # 2025-05-31 23:00:00-05:00
 ```
 
-::: tip 提示
-注意：Python 3.9 引入了 zoneinfo 标准库，在高于 3.8 的版本中可直接使用，此处以 3.8 可用的处理方式为例。
-:::
+说明：`astimezone()` 方法可以将一个带时区信息的时间转换到目标时区，常用于国际化场景。
