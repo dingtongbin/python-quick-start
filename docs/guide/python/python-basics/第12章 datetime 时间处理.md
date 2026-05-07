@@ -8,13 +8,13 @@
 | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 手动创建具体时间  | `datetime.datetime(year, month, day[, hour[, minute[, second[, microsecond]]]])` | 必需参数：year, month, day。其他都是可选的，默认为0。注意月份和日期不能超出范围，否则会抛出 `ValueError`。 |
 | 获取当前本地时间  | `datetime.datetime.now()`                                    | 返回一个表示当前本地日期和时间的 `datetime` 对象。无参数。   |
-| 获取当前 UTC 时间 | `datetime.datetime.utcnow()`                                 | 返回一个表示当前世界协调时间（UTC）的 `datetime` 对象。无参数。注意：官方推荐使用 `now(timezone.utc)` 替代此方法。 |
+| 获取当前 UTC 时间 | `datetime.datetime.now(timezone.utc)`                        | 推荐写法：返回一个表示当前世界协调时间（UTC）的 `datetime` 对象，带时区信息。需要导入 `timezone`。 |
 
 现在，让我们通过代码来实际感受一下如何创建 `datetime` 对象。
 
 ```python
-# 导入 datetime 模块中的 datetime 类
-from datetime import datetime
+# 导入 datetime 模块中的 datetime 类和 timezone 类
+from datetime import datetime, timezone
 
 # 尝试手动创建一个 datetime 对象
 try:
@@ -30,9 +30,9 @@ except ValueError as e:
 current_local_time = datetime.now()
 print(f"当前本地时间: {current_local_time}")
 
-# 获取当前的 UTC 时间 (虽然不推荐，但为了演示)
-current_utc_time = datetime.utcnow()
-print(f"当前 UTC 时间 (旧方法): {current_utc_time}")
+# 获取当前的 UTC 时间（推荐写法）
+current_utc_time = datetime.now(timezone.utc)
+print(f"当前 UTC 时间: {current_utc_time}")
 ```
 
 这段代码展示了三种基本的创建方式。记住，手动创建时一定要确保日期是合法的，比如你不能创建一个 `datetime(2026, 2, 30)`，因为2月没有30号，Python会毫不留情地抛出一个 `ValueError` 异常。所以，养成用 `try...except` 包裹的习惯是个好主意，尤其是在处理用户输入的时间时。
@@ -198,3 +198,25 @@ except ValueError as e:
 `strftime` 方法非常强大，几乎可以满足你所有的时间展示需求。只需要记住对应的格式指令，就能随心所欲地定制输出样式。这对于生成报告、记录日志或者向用户展示信息都至关重要。
 
 这节我们掌握了使用 `strftime` 方法将 `datetime` 对象格式化为各种人类可读字符串的技巧。这是让程序输出更专业、更友好的关键一步。
+
+### 12.5 时区处理初步
+
+在实际应用中，我们经常需要处理不同时区的时间。Python 3.8 中可以使用 `timezone` 类来处理时区信息。
+
+```python
+from datetime import datetime, timezone, timedelta
+
+# 创建带时区的时间
+tz_beijing = timezone(timedelta(hours=8))
+t = datetime(2025, 1, 1, 12, 0, 0, tzinfo=tz_beijing)
+print(t)  # 2025-01-01 12:00:00+08:00
+
+# 转换为其它时区
+tz_newyork = timezone(timedelta(hours=-5))
+t_newyork = t.astimezone(tz_newyork)
+print(t_newyork)  # 2025-01-01 04:00:00-05:00
+```
+
+::: tip 提示
+注意：Python 3.9 引入了 zoneinfo 标准库，在高于 3.8 的版本中可直接使用，此处以 3.8 可用的处理方式为例。
+:::
