@@ -38,11 +38,11 @@ git push origin feat/你的改动描述
 ### 文件命名
 
 - 使用中文文件名，与已有文件保持一致
-- 格式：`序号、章节名称.md`，例如 `1、环境选择.md`
+- 格式：`第X章 章节名称.md`，例如 `第1章 开发环境搭建.md`
 
 ### Markdown 格式
 
-- 每个章节以 `#` 一级标题开头
+- 每个章节开头使用 `#` 一级标题声明章节名称
 - 代码块使用正确的语言标识（```python）
 - 重要内容使用 `**加粗**` 或 `> 提示框`
 - 长文章建议使用 `------` 分隔不同小节
@@ -64,6 +64,7 @@ docs/
 │       ├── python-basics/      # Python 基础
 │       ├── python-data-analysis/
 │       ├── python-data-structures-and-algorithms/
+│       ├── python-fastapi/
 │       ├── python-pyside6/
 │       ├── python-django/
 │       └── python-web-scraping/

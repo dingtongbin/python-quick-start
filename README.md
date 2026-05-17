@@ -3,7 +3,7 @@
 > 从零开始，系统掌握 Python 编程技能
 
 [![Deploy VitePress site to Pages](https://github.com/dingtongbin/python-quick-start/actions/workflows/Deploy%20VitePress%20site%20to%20Pages.yml/badge.svg)](https://github.com/dingtongbin/python-quick-start/actions/workflows/Deploy%20VitePress%20site%20to%20Pages.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 在线阅读：https://dingtongbin.github.io/python-quick-start/
 
@@ -11,7 +11,7 @@
 
 ## 这是什么？
 
-这是一份面向零基础和转行开发者的 Python 系统教程，采用 VitePress 构建，内容从基础语法到实战项目，覆盖 6 大方向，共 85+ 篇详细教程。
+这是一份面向零基础和转行开发者的 Python 系统教程，采用 VitePress 构建，内容从基础语法到实战项目，覆盖 5 大方向，共 65 篇详细教程。
 
 所有示例基于 Python 3.10，强调动手实践，拒绝纸上谈兵。
 

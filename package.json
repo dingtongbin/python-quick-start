@@ -1,4 +1,9 @@
 {
+  "name": "python-quick-start",
+  "version": "1.0.0",
+  "description": "快速学习python相关基础知识",
+  "type": "module",
+  "license": "Apache-2.0",
   "devDependencies": {
     "vitepress": "^2.0.0-alpha.17"
   },

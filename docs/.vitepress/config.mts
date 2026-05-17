@@ -6,7 +6,24 @@ export default defineConfig({
   base: '/python-quick-start/',
   title: "python-quick-start",
   description: "快速学习python相关基础知识",
-  ignoreDeadLinks: true,
+  ignoreDeadLinks: false,
+  theme: './.vitepress/theme',
+  head: [
+    // 百度统计
+    [
+      'script',
+      {},
+      `
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?8016c34df1938bfa9c6370a08fecfaac";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      `
+    ]
+  ],
   markdown: {
     config(md) {
       md.use(escapeBraces)
